@@ -76,6 +76,7 @@ h1{
     flex-wrap: wrap;
     gap: 25px;
     justify-content: center;
+    font-family: 'Inter', sans-serif;
 }
 
 
@@ -121,13 +122,16 @@ h1{
 
 .container-produtos {
 	overflow: hidden;
+  justify-content: center
 }
 
 .container-produtos {
-	max-width: 100%;
+	max-width: 70%;
 	-moz-transition: all 0.3s;
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
+  -webkit-box-shadow: 5px 6px 15px 0px rgba(0,0,0,0.15); 
+box-shadow: 5px 6px 15px 0px rgba(0,0,0,0.15);
 }
 
 .container-produtos:hover {
@@ -197,7 +201,7 @@ h1{
   
 .message {
       font-size: 25px;
-      font-family: 'Inter';
+      font-family: 'Inter', sans-serif;
       color:#f0047f;
   }
 
@@ -262,8 +266,6 @@ h1{
     background-size: 100%; 
     background-position: center;
     height: 500px;
-
-
   }
 
   .banner-principal{
@@ -271,8 +273,7 @@ h1{
     margin-left:250px;
     gap: 25px;
     justify-content: flex-start;
-    align-items: normal;   
-    
+    align-items: normal;       
   }
 
 .texto-intro{
@@ -291,22 +292,21 @@ h1{
 
 .texto-intro a{    
     border: 3px #f0047f solid;
-    padding: 15px;
+    margin-top: 10px;
+    padding: 10px;
     font-size: 15px;
     border-radius: 10px;
     font-family: 'Inter', sans-serif;
     color: white;
 }
 
-.fazer-inscricao{
-    margin-top: 10px;
-}
+
 .texto-intro a:hover{
-    padding-left: 10px;
+    padding-left: 20px;
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
     transition: all 0.4s;
-    color: #f0047f;
+    color: white;
     background-color: rgba(255, 255, 255, 0.297);
 }
 .texto-intro p{
@@ -314,4 +314,135 @@ h1{
     font-size: 18px;
     color: white;
     margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+.page-main-2{
+  width: 80%;
+  display: flex;
+
+}
+
+.section2{
+  display: flex;
+}
+/* -----------------------------sobrenos */
+
+
+.container-sobrenos-geral{
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+
+}
+
+.container-medida-flex{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  
+
+}
+.container-sobrenos-texto{
+  width: 500px;
+  
+}
+.container-sobrenos-texto h2{
+  color:#f0047f
+  
+}
+.contar
+.grid-3{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.grid-3 p{
+  margin:0;
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.grid-3 h2{
+  margin-bottom: 2px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.grid-3 h3{
+  margin: 0;
+  font-size: 15px;
+}
+
+.div1, .div2, .div3{
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+/* ---------------blog---------- */
+
+.container-geral-blog{
+  width: 70%;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: space-around;
+  margin:0 auto;
+}
+
+.container-blog-flex{
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  width: 300px;
+  height: 500px;
+  -webkit-box-shadow: 5px 6px 15px 0px rgba(0,0,0,0.15); 
+box-shadow: 5px 6px 15px 0px rgba(0,0,0,0.15);
+}
+.container-blog-flex:hover{
+  -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.container-imagem-blog{  
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.container-imagem-blog img{
+  margin-top: 0;
+}
+.container-blog-conteudo{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.container-blog-conteudo p{
+  text-align: center;
+  font-size: 15px;
+}
+
+.container-blog-conteudo h2{
+  text-align: center;
+  font-size: 18px;
+  color: #f0047f;
+}
+
+.container-blog-conteudo a{
+  background-color: #f0047f;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.container-blog-conteudo a:hover{
+  background-color: aquamarine;
+  color: black;
 }
