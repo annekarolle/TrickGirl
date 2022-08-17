@@ -25,17 +25,32 @@
            <a href="#"> Promoções</a>
         </div> -->
     </header>
-    <section class="produtos-flex">
-        <!-- <h1>TrickShop</h1> -->
-        <div class="container-produtos">
-             <img src="./img/Ativo 144.png" alt="" width="100%">
-            <p>Blusa Trick girl - longa rosa</p>
-            <h3>R$ 49,90</h3>
-           <button class="botao-adicionar">Adicione ao carrinho</button>
-        </div>
-      
-        
-    </section>
+    <main id="secao-de-compras">
+        <div id="container-geral">
+            <ul id="lista-produtos" class="listaProdutos">  
+            </ul>
+            <section id="carrinho">
+                <form id="container-pesquisa">
+                    <input type="search" id="input" list="produtos"placeholder="Buscar Produto..." required>
+                    <input id="button-pesquisa" type="button" value="Enviar">                                  
+                </form>
+                <div id="carrinho-de-compras">
+
+                    <div id="header-carrinho">
+                        <h5>Carrinho de compras</h5>
+                    </div>
+                    <ul id="interior-carrinho">
+               
+                    </ul>
+     
+                    <div id="resumo-itens-carrinho" class="resumo-itens-carrinho">                        
+                        <h5 id="mensagemCarrinho"></h5>                       
+                         <p id="precoTotal"></p>  
+                         <p id="quantidade"></p>
+                </div>
+            </section>
+      </div>        
+    </main>
 
 
     <footer class="container-rodape">      
@@ -68,5 +83,5 @@
   
 
 
-    
+<script src="./index.js"></script>  
 </html>
