@@ -14,7 +14,7 @@ body{
     width: 100%;
     font-family: 'Inter', sans-serif;
     -webkit-box-shadow: -3px 16px 15px -12px rgba(0,0,0,0.43); 
-box-shadow: -3px 16px 15px -12px rgba(0,0,0,0.43);  
+  box-shadow: -3px 16px 15px -12px rgba(0,0,0,0.43);  
     
 
 }
@@ -72,11 +72,12 @@ h1{
 
 .produtos-flex{
     display: flex;
-    width: 100%;
+    width: 100%;    
     flex-wrap: wrap;
-    gap: 25px;
-    justify-content: center;
+    gap: 10px;   
     font-family: 'Inter', sans-serif;
+    justify-content: space-around;
+    align-items: stretch;
 }
 
 
@@ -88,29 +89,32 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;   
-    padding: 20px; 
+    padding: 10px; 
      
 }
 
 
-.container-produtos a{
-    background-color: #f0047f;
-    border-radius: 10px;
-    padding: 15px;
-    color: white;   
+.botao-adicionar{
+  background-color: #f0047f;
+  border: none;
+  padding: 5px;
+  column-rule-color: white;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  }
+
+.botao-adicionar:hover{
+    background-color: aquamarine;
+     color: black;     
     
 }
 
-.container-produtos a:hover{
-    background-color: aquamarine;
-   color: black;
-   
+.container-produtos p,h3{
+    margin: 0px;
+    font-size: 15px; 
+      
 }
-
-.container-produtos p{
-    margin: 5px;    
-}
-
 
 .container-flex img{
     width: 25%;
@@ -134,34 +138,45 @@ h1{
 box-shadow: 5px 6px 15px 0px rgba(0,0,0,0.15);
 }
 
-.container-produtos:hover {
-	-moz-transform: scale(1.1);
-	-webkit-transform: scale(1.1);
+.container-produtos img:hover {
+	-moz-transform: scale(1);
+	-webkit-transform: scale(1);
 	transform: scale(1.1);
 }
 
 /* ------------- formulario  */
 
-.form {
-    background:white ;
-    max-width:400px;
-    height: 500px;
-    margin-right:auto;
-    margin-left:auto;  
+.containerFormularioDesafio {
+ display: flex;
+ margin: 0 auto;
+ justify-content: center;
+}
+
+
+  .formularioDesafio{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;       
     text-align:center ;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); 
+
+    background:white ;
+
+    max-width:400px;
+    width: 100%;  
+    gap: 10px;
+
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.24); 
     padding: 10px 0;
-    border-radius: 20px;
+    border-radius: 8px;
   }
+ 
   
-  .form input {   
+  .containerFormularioDesafio input {   
     background-color:#f9fafb ;
     border: none;
-    width:325px;
-    margin:10px ;
-    padding:15px ;
-    font-size:15px;
-    
+    padding: 15px;
+    width:80%;  
+    font-size:15px;    
   }
   
   input:hover::placeholder {
@@ -171,23 +186,23 @@ box-shadow: 5px 6px 15px 0px rgba(0,0,0,0.15);
     transition: all 0.4s;
     }
 
-  .form #nome {
+  .containerFormularioDesafio #nome {
     background-color:#f9fafb ;
-    border:#f0047f;
-    
+    border:#f0047f;    
   }
+
   
-  .form button {   
-    text-transform:none ;
+  
+  .containerFormularioDesafio button {  
+    
     background-color:#f0047f;
-    width:325px;
+    width:90%;
     border:10px;
     padding:15px;
     color: white;
     font-size:18px ;
     cursor:pointer ;
-    box-sizing:border-box;
-    border-radius: 20px;
+  
     
   }
   
@@ -195,6 +210,8 @@ box-shadow: 5px 6px 15px 0px rgba(0,0,0,0.15);
       background-color: aquamarine;
       color: black;
   }
+
+
   a{
     text-decoration:none;
   }
@@ -378,12 +395,15 @@ box-shadow: 5px 6px 15px 0px rgba(0,0,0,0.15);
   font-size: 15px;
 }
 
-.div1, .div2, .div3{
+.img-equipe{
   display: flex;
   flex-direction: column;
-  align-items: center
+  align-items: center;
 }
 
+#div1{
+  cursor: pointer;
+}
 /* ---------------blog---------- */
 
 .container-geral-blog{
