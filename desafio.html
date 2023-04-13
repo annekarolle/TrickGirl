@@ -26,16 +26,71 @@
 
    <main>
     <div class="containerFormularioDesafio">
-        <form class="formularioDesafio">
-            <p class="message"> Faça sua inscrição </p>
-            <input id="nome" type="text" placeholder="Nome"/>
-            <input id="instagram" type="text" placeholder="@instagram"/>              
-            <input type="email" placeholder="E-mail"/>
-            <input type="file" name="arquivo" id="arquivo">
-            <button>Fazer Insrição</button>             
+        <form class="formularioDesafio" id="form">
+            <p class="message"> Faça sua inscrição </p>           
+            <input id="nome" type="text" placeholder="Nome" required/>
+          
+            <input id="instagram" type="text" placeholder="@instagram" required/> 
+                      
+            <input  id="email" type="email" placeholder="E-mail" required/>
+            <div class="estado-cidade">               
+            <select id="estado" name="estado" required>
+                <option value="" required>Estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="EX">Estrangeiro</option>
+            </select>            
+            <input id="cidade" type="text" placeholder="Digite sua cidade..." required/> 
+            </div>            
+            <select id="inscricao" name="inscricao" required>
+                <option value="" required>Selecione um Desafio</option>
+                <option value="Manobra do Mês">Manobra do Mês</option>
+                <option value="Girl Power">Girl Power</option>
+                <option value="Desafio 2022">Desafio 2022</option>   
+            </select>  
 
-        </form>    
+            <button type="submit" id="btn-inscricao" form="form">Fazer Insrição</button>             
+            <div id="result" class="result"></div>
+        </form>   
+        <div class="container-text">
+            <h2>Trick Desafios</h2>
+            <p>Buscando criar criar um ambiente mais inclusivo e acolhedor para as patinadoras. Isso é importante porque a patinação street costuma ser dominada por homens e pode ser intimidante para as mulheres que querem se envolver no esporte. A Trick Girl trabalha para mudar essa realidade e criar um espaço seguro e inclusivo para todas as patinadoras.</p>
+            <p>Não importa se você é uma patinadora experiente ou está apenas começando, todos os níveis de habilidade são bem-vindos. Você pode competir de qualquer lugar do país, enviando um vídeo de sua apresentação para nossa plataforma online.</p>
+            <p>E não é só isso - a Trick Girl está oferecendo prêmios incríveis para as vencedoras, incluindo dinheiro em espécie e produtos exclusivos da nossa marca. Mas isso não é tudo: ao participar da competição, você fará parte de uma comunidade vibrante e inclusiva de mulheres que compartilham uma paixão pela patinação.</p>
+            <p>Não perca a chance de participar da próxima competição da Trick Girl e se juntar à revolução da patinação street feminina no Brasil. Inscreva-se agora e comece a praticar suas manobras para arrasar na competição!</p>
+        </div> 
     </div>
+    <div class="container-desafios-passados">
+        <img src="./img/img/icones/Ativo 2244.png" alt="">
+        <img src="./img/img/icones/Ativo 2344.png" alt="">
+        <img src="./img/img/icones/Ativo 2444.png" alt="">
+    </div>
+  
    </main>
 
 
@@ -62,6 +117,7 @@
            </div>
              
  </footer> 
+ <script type="module" src="desafio.js"></script>
 
 </body>
    
